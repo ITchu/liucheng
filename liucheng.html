@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>流程</title>
+</head>
+<body>
+	
+</body>
+</html>
+<script>
+    //分支结构
+	var num=-10;
+	//单分支
+	if(num>0){
+		alert(1);
+	}
+	// 双分支
+	if(num>0){
+		alert(true);
+	}
+	else{
+		alert(false);
+	}
+	//多分支
+	 var score=1*prompt('请输入你的成绩',60);
+	if(score>=90 && score<=100){
+		alert('优秀');
+	}
+	else if(score>=80 && score<90){
+		alert('良');
+	}
+	else if(score>=70 && score<80){
+		alert('中');
+	}
+	else if(score>=60 && score<70){
+		alert('及格');
+	}
+	else if(score>=0 && score<60){
+		alert('不及格');
+	}
+	else{
+		alert('输入错误');
+	}
+	//swith语句
+	var score=1*prompt('请输入你的成绩',60);
+	switch(parseInt(score/10)){
+		case 10:
+		alert("满分"); 
+		break;
+		case 9:
+		alert("优秀");
+		break;
+		case 8:
+		alert('良');
+		break;
+		case 7:
+		alert('中');
+		break;
+		case 6:
+		alert('及格');
+		break;
+		default:
+		alert('不及格');
+	}
+	//循环
+	//for循环
+	//1-100的和
+	var sum=0;
+	for(var x=1;x<=100;x++){
+		sum+=x;
+	}
+	document.write('1-100的和为：'+sum+'<br>');
+	//100以内偶数的和
+	var sum=0;
+	for(var i=2;i<=100 && i%2==0;i+=2){
+		sum+=i;
+	}
+	document.write('100以内偶数的和为：'+sum+'<br>');
+	//100以内奇数的和
+	var sum=0;
+    for(var i=1;i<=100 && i%2!=0;i+=2){
+    	sum+=i;
+	}
+	document.write('100以内奇数的和为：'+sum+'<br>');
+	//while循环
+	var a=1;
+    while(a<10){
+      document.write(a);
+      a++;
+    }
+    document.write('<br>');
+    //do while语句
+    var a=1;
+    do{
+       sum+=a;
+       a++;
+       document.write(a);
+    }while(a<10)
+</script>
